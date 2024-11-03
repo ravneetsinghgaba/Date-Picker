@@ -1,0 +1,103 @@
+.date-picker {
+    border: 6px solid #ccc;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+.date-picker h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+  
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+  
+.controls button {
+    background-color: #b6e4f2;
+    color: black;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+  
+.controls button:hover {
+    background-color: #73bbd1;
+}
+  
+.controls span {
+    font-weight: bold;
+    margin: 0 8px;
+}
+  
+/* Calendar styling */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+  
+/* Day label styling */
+.day-label {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+  
+.day {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+}
+  
+.day.weekend {
+    background-color: #f8d7da;
+    color: #333;
+}
+  
+.day.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+.day:hover:not(.weekend):not(.selected) {
+    background-color: #d1e7dd;
+}
+  
+.day.weekend:hover {
+    cursor: not-allowed;
+}
+
+.debug-info {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+  
+
+
+  
+  
+
